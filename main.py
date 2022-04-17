@@ -78,17 +78,17 @@ def sma20_xrp(itv, symbol=sym_num1):
     sma_20_2 = sma20_calc(df,20).iloc[-2]
     sma_20_3 = sma20_calc(df,20).iloc[-3]
 
-    if (long_qty != 0):
-        l_new_loss_limit = abs(ll_profit - l_ent_price) * 0.5 + l_ent_price
-        l_new_loss = round(abs(ll_profit - l_ent_price) * 0.35 + l_ent_price,4)
-        if (l_new_loss_limit < sym_price) and (ll_loss != l_new_loss):
-            session.set_trading_stop(symbol=sym_num1, side="Buy", stop_loss=l_new_loss)
+#    if (long_qty != 0):
+#        l_new_loss_limit = abs(ll_profit - l_ent_price) * 0.5 + l_ent_price
+#        l_new_loss = round(abs(ll_profit - l_ent_price) * 0.35 + l_ent_price,4)
+#        if (l_new_loss_limit < sym_price) and (ll_loss != l_new_loss):
+#            session.set_trading_stop(symbol=sym_num1, side="Buy", stop_loss=l_new_loss)
     
-    if (short_qty != 0):
-        s_new_loss_limit = s_ent_price - abs(ss_profit - s_ent_price) * 0.5 
-        s_new_loss = round(s_ent_price - abs(ss_profit - s_ent_price) * 0.35,4)
-        if (s_new_loss_limit > sym_price) and (ss_loss != s_new_loss):
-            session.set_trading_stop(symbol=sym_num1, side="Sell", stop_loss=s_new_loss)
+#    if (short_qty != 0):
+#        s_new_loss_limit = s_ent_price - abs(ss_profit - s_ent_price) * 0.5 
+#        s_new_loss = round(s_ent_price - abs(ss_profit - s_ent_price) * 0.35,4)
+#        if (s_new_loss_limit > sym_price) and (ss_loss != s_new_loss):
+#            session.set_trading_stop(symbol=sym_num1, side="Sell", stop_loss=s_new_loss)
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 #long open
@@ -685,33 +685,44 @@ while True:
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)    
-    
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
     sym_num1="BSWUSDT"
 
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-    
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)    
     
     sym_num1="MATICUSDT"
 
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-    
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)    
     
     sym_num1="OGNUSDT"
 
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-       
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)       
 
     sym_num1="GALAUSDT"
 
     print(sym_num1,"5 min")
     sma20_xrp(5)
+    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
     time.sleep(5)
     
     sym_num1="CHZUSDT"
@@ -719,59 +730,61 @@ while True:
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-    
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)    
    
     sym_num1="GMTUSDT"
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-#    print(sym_num1,"15 min")
-#    sma20_xrp(15)
-#    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
 
     sym_num1="SANDUSDT"
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-#    print(sym_num1,"15 min")
-#    sma20_xrp(15)
-#    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
 
     sym_num1="ADAUSDT"
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-#    print(sym_num1,"15 min")
-#    sma20_xrp(15)
-#    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
     sym_num1="SLPUSDT"
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-#    print(sym_num1,"15 min")
-#    sma20_xrp(15)
-#    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
 
     sym_num1="FTMUSDT"
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-#    print(sym_num1,"15 min")
-#    sma20_xrp(15)
-#    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
 
     sym_num1="IOSTUSDT"
     print(sym_num1,"5 min")
     sma20_xrp(5)
     time.sleep(5)
-#    print(sym_num1,"15 min")
-#    sma20_xrp(15)
-#    time.sleep(5)
+    print(sym_num1,"15 min")
+    sma20_xrp(15)
+    time.sleep(5)
     
   
     
